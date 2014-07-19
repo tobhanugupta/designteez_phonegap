@@ -1,0 +1,251 @@
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height:55px;
+  border:none;
+left:0;
+top:0;
+z-index:999;
+}
+
+
+#blogone
+	{ 
+		left:0; 
+		top:50;
+		padding:0;
+		width:100%;
+		height:200;
+		overflow: hidden;
+            position: relative;
+		vertical-align: bottom;
+		list-style-type:none;
+		margin:10px;
+		display:block;
+	}
+
+#blogone tr
+	{
+width:100%;
+left:0px;
+	}
+
+#blogone img
+	{
+		border: none;
+height:200;
+width:100%;
+position:absolute;
+left:0px;
+top:30px;
+z-index:-9;
+	}
+
+#blogone a
+	{
+		display:block;
+align:bottom;
+height:100;
+		background-color:transparent;
+		margin-top:180px;
+		
+		/*border-style:inset;*/
+	}
+
+#bookInFo{
+		display:block;
+		position:relative;
+		top:50;
+		width:100%;
+			overflow: hidden;
+            position: relative;
+		background:#FFFFFF;
+
+}
+
+#bookInFo tr
+	{
+		padding:0;
+		list-style-type:none;
+		display:block;
+		width:100%;
+		background:#FFFFFF;
+	}
+
+#bookInFo tr img
+	{
+		border: none;
+		margin: 0;
+		padding: 0;
+		position:absolute;
+		float: left;
+	}
+
+#bookInFo a
+	{
+		display:block;
+		height:110;
+		margin-left:110;
+	    	background:#fff;
+		/*border-style:inset;*/
+	}
+
+
+     #navigation th
+	{
+		padding:0;
+		list-style-type:none;
+		margin:0;
+		width:100%;
+
+	}
+	
+#navigation th:hover
+	{
+		display:block;
+	    	background:#FFFFFF;
+		height:auto;
+
+	}
+
+
+	#navigation a
+	{
+		display:block;
+		margin-left:10px;
+		/*border-style:inset;*/
+	}
+
+#joom table tr {
+	top:0;
+padding: 10px; 
+	height:60px;
+	color:#FFF;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+font-size:30px;
+	background-color:#0d77b6;
+}
+
+
+#article {
+	color:#FFF;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+font-size:24px;
+padding:0;
+margin:0;
+}
+
+#article a {
+	color:#FFF;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+font-size:24px;
+padding-left:15px;
+display:block;
+}
+
+html{margin:0;padding:0;}
+	
+
+body { padding: 0; margin: 0; background: #fff; font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif; color: #444340;  padding: 10px; font-size:20px}
+
+
+
+#SocialLinks { padding: 10px 0 0 0; }
+#SocialLinks:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+#SocialLinks a { display: block; float: left; padding-right: 15px; }
+
+
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+	margin:0;
+	line-height:1.1em;
+	color:#000;
+	}	
+
+
+h1{font-size:2em;margin-bottom:.5em;}	
+
+h2{font-size:1.75em;margin-bottom:.5142em;padding-top:.2em;}	
+
+h3{font-size:1.5em;margin-bottom:.7em;padding-top:.3em;}
+
+h4{font-size:1.25em;margin-bottom:.6em;}
+
+h5,h6{font-size:1em;margin-bottom:.5em;font-weight:bold;}
+
+
+
+a, a:visited{
+	text-decoration:none;
+	color:#06C;
+	}
+
+
+a:hover{color:#999;}
+
+
+
+header, div, article, section, footer, address {display:block;}
+
+	
+
+header{
+		height:32px;
+	
+		overflow:hidden;
+	
+		background:#e1e1e1;
+	
+		background:-webkit-gradient(linear, left top, left bottom, from(#d1d1d1), to(#e1e1e1));
+	
+		background:-moz-linear-gradient(top,  #d1d1d1,  #e1e1e1);
+	
+		padding:0;
+	}
+
+
+header h1{
+	
+		line-height:32px;
+	
+		font-size:14px;
+	text-shadow:#fff 0 1px 0;
+	
+		text-align:center;
+	
+}
+
+
+
+
+/* For inline examples only */
+#PhotoSwipeTarget { width: 100%; height: 100%;}
+
+#fixedslider{
+		
+  position: fixed;
+  width: 100%;
+  height:50%;
+left:0;
+top:0;
+z-index:1;}
+
+
+#MainContent {background: #ffffff; margin-top:50px padding-bottom: 2px; padding-top:50px; height:180px;}
+
+#bodycontent { padding: 10px; font-size:20px; border-top: none; margin-top:5px; height: 400px}  
+
+input{
+	height:40;
+	width:100%;
+	margin-top:20;
+}
+
+
+textarea{
+	margin-top:20;
+	height:200;
+	width:100%;
+}
+	

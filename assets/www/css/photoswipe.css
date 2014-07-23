@@ -13,7 +13,7 @@
  
 body.ps-active, body.ps-building, div.ps-active, div.ps-building
 {
-	background: #000;
+	background: #4e6c81;
 	overflow: hidden;
 }
 body.ps-active *, div.ps-active *
@@ -30,22 +30,20 @@ body.ps-active *:focus, div.ps-active *:focus
 /* Document overlay */
 div.ps-document-overlay 
 {
-	background: #000;
+		background: #4e6c81;
 }
 
 
 /* UILayer */
 div.ps-uilayer { 
-	
-	background: #000;
+	background: #4e6c81;
 	cursor: pointer;
-	
 }
 
 
 /* Zoom/pan/rotate layer */
 div.ps-zoom-pan-rotate{
-	background: #000;
+	background: #4e6c81;
 }
 div.ps-zoom-pan-rotate *  { display: block; }
 

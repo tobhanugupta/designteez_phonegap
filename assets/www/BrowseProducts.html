@@ -10,6 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link href="styles.css" type="text/css" rel="stylesheet" />
 
+		<script src="jquery.js"></script>
+
+		<script src="jquery-1.7.1.min.js"></script>
+
 		<script src="cordova.js"></script>	
 		<script src="js/modernizr.custom.js"></script>
 <script>
@@ -31,6 +35,14 @@
 
 		 return false;
              }
+
+	function selectt(x)
+		{
+			localStorage.tshirt=x;
+			//alert("from local" + localStorage.tshirt);
+			
+		window.location.href = ("product.html");
+		}
 	
 	function openhome()
 	{
@@ -165,7 +177,7 @@ font-size:30px;
 		<!--	<a href="#" id="showRight">Home</a>	-->
 			<a href="#" ontouchstart="openhome();return false;">Home</a>
 			<a href="about.html">About Us</a>
-			<a href="Browseone.html">Catlog</a>
+			<a href="Browseone.html">Catalog</a>
 			 <a href="contact.html">Contact Us</a>
 		</nav>
 
@@ -176,9 +188,12 @@ font-size:30px;
 Cotton
 </p>
 <ul id="Gallery" class="gallery">
-<li><a href="product.html"><img src="img/catlog/1.png">
+<li>
+<a href="#" ontouchstart="selectt('1.png'); return false;">
+<img src="img/catlog/1.png">
 SoftStyle</a>
 </li>
+<a href="#" ontouchstart="selectt('2.png'); return false;">
 <li><img src="img/catlog/2.png">
 Premium Cotton
 </li>
@@ -189,10 +204,14 @@ Premium Cotton
 Dry-Fit
 </p>
 <ul id="Gallery" class="gallery">
-<li><img src="img/catlog/3.png">
+<li>
+<a href="#" ontouchstart="selectt('3.png'); return false;">
+<img src="img/catlog/3.png">
 Micro Fibre Polo Dryfit
 </li>
-<li><img src="img/catlog/4.png">
+<li>
+<a href="#" ontouchstart="selectt('4.png'); return false;">
+<img src="img/catlog/4.png">
 Dryfit Round Neck
 </li>
 </ul>

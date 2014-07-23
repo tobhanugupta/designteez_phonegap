@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
@@ -9,9 +8,13 @@
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 
+		<script src="jquery.js"></script>
+
+		<script src="jquery-1.7.1.min.js"></script>
+
 		<link href="styles.css" type="text/css" rel="stylesheet" />
 
-		<script src="cordova.js"></script>	
+	<script src="cordova.js"></script>		
 		<script src="js/modernizr.custom.js"></script>
 
 
@@ -21,6 +24,9 @@
 	
 	
 	<script type="text/javascript">
+
+		$(document).on('touchcancel', function(event){event.preventDefault()});
+
 
 		(function(window, PhotoSwipe){
 		
@@ -62,7 +68,13 @@
 
 		 return false;
              }
-	
+			 
+			 
+		imgval = localStorage.tshirt;
+		//alert(imgval);
+		document.getElementById("mainimg").src = "img/catlog/" + imgval;
+		
+		
 	function openhome()
 	{
 		window.location.href = ("index.html");
@@ -72,14 +84,20 @@
 
 <style>
 
-@charset "utf-8";
+/* UILayer */
+div.ps-uilayer {
+
+background: transparent;
+cursor: pointer;
+}
+
 
 .gallery { list-style: none; padding: 0; margin-left: 10px; 
 margin-right: 10px; margin-left:8%;}
 .gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
-.gallery li { float: left; margin: 5px; width: 120px; }
+.gallery li { float: left; margin: 5px; width: 45%; }
 .gallery li a { display: block;  }
-.gallery li img { display: block; width: 100%; height: 100%; min-height:100px;}
+.gallery li img { display: block; width: 100%; }
 
 
 body {
@@ -169,6 +187,7 @@ text-align:justify;
 font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
+
 </style>
 
 	</head>
@@ -185,16 +204,16 @@ font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 		<!--	<a href="#" id="showRight">Home</a>	-->
 			<a href="#" ontouchstart="openhome();return false;">Home</a>
 			<a href="about.html">About Us</a>
-			<a href="Browseone.html">Catlog</a>
+			<a href="Browseone.html">Catalog</a>
 			 <a href="contact.html">Contact Us</a>
 		</nav>
 
 <div id="ground">
 <div id="MainContent">
 
-<table width="80%" align="center" style="top:100px;">
+<table width="90%" align="center" style="top:100px;">
 <tr>
-<td align="center"><img src="img/catlog/1.png" width="300px" height="300px"></td>
+<td align="center"><img id="mainimg" width="300px" height="300px"></td>
 </tr>
 <tr><td align="center">	
 	<ul id="Gallery" class="gallery">
@@ -277,6 +296,10 @@ White
 </div>	
 	<script src="js/classie.js"></script>
 		<script>
+		
+		imgval = localStorage.tshirt;
+		document.getElementById("mainimg").src = "img/catlog/" + imgval;
+		
 			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 				menuRight = document.getElementById( 'cbp-spmenu-s1' ),
 				menuTop = document.getElementById( 'cbp-spmenu-s3' ),

@@ -1,27 +1,259 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-		<script type="text/javascript" src="cordova.js"></script>
-		 <script>
-     function onLoad(){
-			alert("HELLO");
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"> 
+
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" type="text/css" href="Rasovai.css" media="screen" />
+
+		<script src="cordova.js"></script>	
+		<script src="js/modernizr.custom.js"></script>
+<script>
+
           document.addEventListener("deviceready",onDeviceReady, true);
-     }
-	 
-	 function
 
      function onDeviceReady(){
-		//navigator.notification.alert("PhoneGap is working!!");
+	//		navigator.notification.alert("PhoneGap !!");
+		document.addEventListener("backbutton", onBackKeyDown, false);
+	
      }
-  </script>
-    </head>
-	<body onload="onLoad();">
-       <h1>Welcome to PhoneGap</h1>
-       <h2>Edit assets/www/index.html</h2>
-  </body>
+
+	function onBackKeyDown()
+             {
+                // navigator.notification.alert();
+
+			navigator.app.exitApp(); // For Exit Application
+		//window.location.href = ("index.html");
+
+		 return false;
+             }
+	
+	function openhome()
+	{
+		window.location.href = ("index.html");
+	}
+
+</script>
+
+<style>
+
+@charset "utf-8";
+
+
+body {
+background-color:#4e6c81;
+}
+
+
+a,a:hover,a:click, a:visited, button{
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+-webkit-tap-highlight-color: rgba(0,0,0,0); 
+}
+
+
+header {
+	z-index:9999;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+header button {
+top:0;
+right:0;
+ position: absolute;
+	margin-right:10px;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.arr {
+buttom:0;
+position: fixed;
+z-index:9999;
+background-color: transparent;
+
+}
+
+
+.highlight {
+background-image:url('shape5.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+font-size: 18px;
+color:#fff;
+padding-left:5px;
+padding-right:5px;
+}
+
+#imgbar {
+top:140px;
+width:100%;
+height:110px;
+left:0;
+overflow: hidden;
+            position: absolute;
+		list-style-type:none;
+		display:block;
+z-index:9;
+
+}
+
+#ground {
+ position: absolute;
+margin-top:100px;
+width:100%;
+height:auto;
+}
+
+.heads {
+color:#FFFFFF;
+font-size:24px; 
+margin:0;
+padding:0;
+font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.torso {
+color:#FFFFFF;
+font-size:18px; 
+margin:0;
+padding:0;
+text-align:justify;
+font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+</style>
+
+	</head>
+	<body class="cbp-spmenu-push">		
+		<div class="container">
+			<header id="head" class="cbp-spmenu-push" data-id="head">
+			<p style="color:#4e6c81;font-size:30px; margin:0; left:10px; margin-top:8px; padding:0; text-align:justify; font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;">DESIGNTEEZ<p>
+			<button id="showRightPush"><img src="img/menu1.png" width="55px" height="55px"></button>
+			</header>
+			<div class="main">
+				<section class="buttonset"></section>	
+			</div>
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
+		<!--	<a href="#" id="showRight">Home</a>	-->
+			<a href="#" ontouchstart="openhome();return false;">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="Browseone.html">Catlog</a>
+			 <a href="contact.html">Contact Us</a>
+		</nav>
+  
+
+	<div id="ground">
+   
+<table width="80%" align="center" style="top:100px;">
+<tr>
+<td align="center"><img src="img/shirt_48.png" width="100px" height="100px"></td>
+</tr>
+<tr>
+<td align="center"><p class="heads">Your Custom T-Shirt</p></td>
+</tr>
+<tr>
+<td align="center"><p class="torso">
+Everything we sell is custom printed just for you. Add clip art, text, or upload your own images in our Design Studio. We make ordering custom t-shirts easy.
+</p></td>
+</tr>
+<tr>
+<td align="center"><img src="img/delivery_48.png" width="100px" height="100px"></td>
+</tr>
+<tr>
+<td align="center"><p class="heads">Free Shipping Over $100</p></td>
+</tr>
+<tr>
+<td align="center"><p class="torso">
+We offer free shipping in Singapore on every order over $100- 365 days a year.
+</p></td>
+</tr>
+<tr>
+<td align="center"><img src="img/fast_48.png" width="100px" height="100px"></td>
+</tr>
+<tr>
+<td align="center"><p class="heads">We're Fast. Really Fast.</p></td>
+</tr>
+<tr>
+<td align="center"><p class="torso">
+Just because our products are customized, we don't think you should wait weeks to get your order. In stock digital prints are out the door within 3 - 5 Mandays!
+</p></td>
+</tr>
+<tr>
+<td align="center"><img src="img/service_48.png" width="100px" height="100px"></td>
+</tr>
+<tr>
+<td align="center"><p class="heads">Amazing Service</p></td>
+</tr>
+<tr>
+<td align="center"><p class="torso">
+Service isn't just a buzz word around here. We believe in delivering a great experience from the moment you land on our site until your custom apparel arrives at your door.
+</p></td>
+</tr>
+<tr>
+<td align="center"><img src="img/tick_48.png" width="100px" height="100px"></td>
+</tr>
+<tr>
+<td align="center"><p class="heads">Shop With Confidence</p></td>
+</tr>
+<tr>
+<td align="center"><p class="torso">
+We stand by our products and service.
+</p></td>
+</tr>
+<tr>
+<td align="center"><img src="img/2tshirts.png" width="100px" height="100px"></td>
+</tr>
+<tr>
+<td align="center"><p class="heads">We Know T-Shirts</p></td>
+</tr>
+<tr>
+<td align="center"><p class="torso">
+T-Shirts are our life and when it comes to custom apparel, we're the experts. We use the best printing technology in the industry and our quality is second to none.
+</p></td>
+</tr>
+</table>
+		</div>		
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				menuRight = document.getElementById( 'cbp-spmenu-s1' ),
+				menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+				menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				header = document.getElementById( 'head' ),
+				body = document.body;
+
+			showRightPush.addEventListener('touchstart', slidemenu, false);
+
+			function slidemenu() {
+				classie.toggle( this, 'active' );
+				classie.toggle( header, 'cbp-spmenu-push-toleft' );
+				classie.toggle( menuRight, 'cbp-spmenu-open' );
+				disableOther( 'showRightPush' );
+			}
+
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+	</body>
+</html>
+
+</body>
 </html>

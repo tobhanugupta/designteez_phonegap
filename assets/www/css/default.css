@@ -55,6 +55,7 @@ a:hover {
 .container > header {
 	width: 100%;
 	position: fixed;
+	top: 0;
 	height: 55px;
 	background: #dcdcdc;
 	margin: 0 auto;

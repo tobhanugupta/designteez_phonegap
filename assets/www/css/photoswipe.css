@@ -87,8 +87,15 @@ div.ps-caption-content
 	display: block;
 }
 
+.ps-caption{
+opacity:0.8 !important;
+display:block !important;
+}
 
 /* Toolbar */
+
+
+
 div.ps-toolbar
 { 
 	background: #000000;
@@ -102,6 +109,8 @@ div.ps-toolbar
 	height: 44px;
 	display: table;
 	table-layout: fixed;
+	bottom:0;
+	position:fixed;
 }
 div.ps-toolbar * { 
 	display: block;
@@ -171,4 +180,10 @@ div.ps-toolbar-play div.ps-toolbar-content
 		background-size: 176px 88px;
 		background-image: url(icons@2x.png);
 	}
+}
+
+
+.ps-toolbar{
+opacity:0.8 !important;
+
 }

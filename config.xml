@@ -5,7 +5,7 @@
 
 
         <preference name="phonegap-version" value="3.3.0" />
-	<preference name="target-device" value="handset" /> 
+	<preference name="DisallowOverscroll" value="true" />
 
     <name>DesignteezApp</name>
 

@@ -53,7 +53,7 @@ function validateEmail()
    dotpos = emailID.lastIndexOf(".");
    if (atpos < 1 || ( dotpos - atpos < 2 )) 
    {
-       alert("Please enter correct email ID")
+       alert("Invalid email ID")
        document.myForm.email.focus() ;
        return false;
    }
@@ -86,7 +86,7 @@ if( document.myForm.name.value == "" )
 	nametxt = document.myForm.name.value;
             if(!ck_password.test(nametxt))
             {
-                alert("name can only contain alphanumeric characters and hypehns(-)");
+                alert("Invalid name!");
 		document.myForm.name.focus() ;
 		return false;
             }
@@ -102,7 +102,7 @@ if( document.myForm.name.value == "" )
      var ret = checkEmail();
      if( ret == false )
      {
-	alert("Please enter correct email ID")
+	alert("Invalid email ID")
 	document.myForm.email.focus() ;
         return false;
      }
@@ -113,12 +113,12 @@ if( document.myForm.name.value == "" )
 
    } else {
 	
-	  var ck_psword =  /^[A-Za-z][A-Za-z0-9 -]+$/;
+	  var ck_psword =  /^[A-Za-z0-9][A-Za-z0-9 -]+$/;
 	nametxt = document.myForm.subject.value;
             if(!ck_psword.test(nametxt))
             {
-                alert("subject can only contain alphanumeric characters and hypehns(-)");
-		document.myForm.name.focus() ;
+                alert("Invalid subject! ");
+		document.myForm.subject.focus() ;
 		return false;
             }
 	
@@ -134,8 +134,8 @@ if( document.myForm.name.value == "" )
 	nametxt = document.myForm.message.value;
             if(!ck_password.test(nametxt))
             {
-                alert("name can only contain alphanumeric characters and hypehns(-)");
-		document.myForm.name.focus() ;
+                alert("Invalid Message! ");
+		document.myForm.message.focus() ;
 		return false;
             }
 	
@@ -200,14 +200,14 @@ right:0;
 }
 
 input {
-margin-bottom:40px;
+margin-bottom:30px;
 background-color:#dcdcdc;
 color:#000;
 font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 }
 
 textarea{
-margin-bottom:40px;
+margin-bottom:30px;
 	height:200px;
 	width:100%;
 background-color:#dcdcdc;
@@ -282,7 +282,7 @@ font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	<body class="cbp-spmenu-push">		
 		<div class="container">
 			<header id="head" class="cbp-spmenu-push" data-id="head">
-			<p style="color:#4e6c81;font-size:30px; margin:0; left:10px; margin-top:8px; padding:0; text-align:justify; font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;">DESIGNTEEZ<p>
+			<img src="img/DesignTeez.png" height="28px" style="margin:10px;">
 			<button id="showRightPush"><img src="img/menu1.png" width="55px" height="55px"></button>
 			</header>
 			<div class="main">
@@ -300,52 +300,52 @@ font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 	<div id="ground">
 <center>
  <form name="myForm" method="post">
-<table width="80%" align="center" style="top:100px;" cell-spacing="10px">
+<table width="90%" align="center" style="top:100px;" cell-spacing="10px">
 <tr><td>
-<p class="torso" style="font-size: 28px;">
+<p class="torso" style="font-size: 18px;">
 Name *
 </p>
 </td></tr>
 <tr>
 <td align="center">
-<input id="name" type="text" name="name" style="width:100%; height:48px; font-size: 28px; line-height:80%; Font size: 48px; box-shadow:#333;  border-top: 0px solid #ffffff; border-left: 0px solid #ffffff; border-right: 0px solid #ffffff; border: 2px solid #FFF;" />
+<input id="name" type="text" name="name" style="width:100%; height:36px; font-size: 18px; line-height:100%; box-shadow:#333;  border-top: 0px solid #ffffff; border-left: 0px solid #ffffff; border-right: 0px solid #ffffff; border: 2px solid #FFF;" />
 </td>
 </tr>
 <tr><td>
-<p class="torso" style="font-size: 28px;">
+<p class="torso" style="font-size: 18px;">
 Email *
 </p>
 </td></tr>
 <tr>
 <td align="center">
-<input id="email" maxlength='50' name="email" type="email" style="width:100%; height:48px; font-size: 28px; line-height:80%; Font size: 48px; box-shadow:#333; border: 2px solid #FFF; onkeypress="return checkFormGeneric();" />
+<input id="email" maxlength='50' name="email" type="email" style="width:100%; height:36px; font-size: 18px; line-height:100%; box-shadow:#333; border: 2px solid #FFF; onkeypress="return checkFormGeneric();" />
 </td>
 </tr>
 <tr><td>
-<p class="torso" style="font-size: 28px;">
+<p class="torso" style="font-size: 18px;">
 Subject
 </p>
 </td></tr>
 <tr>
 <td align="center">
-<input id="sub" name="subject" type="text" style="width:100%; height:48px; font-size: 28px; line-height:80%; Font size: 48px; box-shadow:#333; border: 2px solid #FFF;" />
+<input id="sub" name="subject" type="text" style="width:100%; height:36px; font-size: 18px; line-height:100%; box-shadow:#333; border: 2px solid #FFF;" />
 </td>
 </tr>
 <tr><td>
-<p class="torso" style="font-size: 28px;">
+<p class="torso" style="font-size: 18px;">
 Message *
 </p>
 </td></tr>
 <tr>
 <td align="center">
-<textarea  rows="4" cols="auto" name="message" style="width:100%; font-size: 28px; line-height:80%; Font size: 48px; box-shadow:#333;  border-top: 0px solid #ffffff;
+<textarea  rows="4" cols="auto" name="message" style="width:100%; font-size: 18px; line-height:24px; box-shadow:#333;  border-top: 0px solid #ffffff;
     border-left: 0px solid #ffffff; border-right: 0px solid #ffffff; border: 2px solid #FFF;">
 </textarea>
 </td>
 </tr>
 </table>
 
-<input type="button" style="width:80%; font-size: 28px; height:48px; background-color: #dcdcdc;" id="submit" value="Submit" onclick="validate()"/>
+<input type="button" style="width:60%; font-size: 18px; height:48px; background-color: #dcdcdc;" id="submit" value="Submit" onclick="validate()"/>
 
 <!--	<input type="submit" value="Submit">	-->
 

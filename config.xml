@@ -6,6 +6,7 @@
 
         <preference name="phonegap-version" value="3.3.0" />
 	<preference name="DisallowOverscroll" value="true" />
+	<preference name="UIWebViewBounce" value="false" />
 
     <name>DesignteezApp</name>
 
